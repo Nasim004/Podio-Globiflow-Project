@@ -47,15 +47,15 @@ def refresh_podio():
     # fill login form
     try:
         elem = driver.find_element(By.NAME, "email")
-        elem.send_keys("Silver@investoffmarket.com")
+        elem.send_keys("*******")
     except:
         print("in email exec")
         driver.implicitly_wait(5)
         elem = driver.find_element(By.NAME, "email")
-        elem.send_keys("Silver@investoffmarket.com")
+        elem.send_keys("*******")
 
     elem = driver.find_element(By.NAME, "password")
-    elem.send_keys("Realestate23B@")
+    elem.send_keys("**********")
     driver.find_element(By.ID, "loginFormSignInButton").click()
     # wait till account option render
     driver.implicitly_wait(5)
@@ -375,7 +375,7 @@ def file_download(file_link):
     time.sleep(1)
     # username and password 
     email = driver.find_element(By.NAME,'email')
-    email.send_keys('Silver@investoffmarket.com')
+    email.send_keys('*******')
     password = driver.find_element(By.NAME,'password')
     password.send_keys('Realestate23B@')
     #login button
